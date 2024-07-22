@@ -1,0 +1,164 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(74, 94, 74);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    background-color: #333;
+    Color: green;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    margin: 0;
+    text-align: center;
+    background-color:white;
+    color: rgb(74, 94, 74);
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section {
+    flex: 1 1 300px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la lista de productos */
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: #333;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color:rgb(55, 129, 55);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+}
+#contador-carrito {
+    color:yellow;
+}
+#contador-titu{
+    color: yellow;
+}
+/* Estilos para el carrito de compras */
+#carrito {
+    text-align: center;
+}
+
+#carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el formulario de cotización */
+#cotizacion {
+    text-align: center;
+    margin: 20px 0;
+    color:rgb(74, 94, 74);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+#cotizacion label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#cotizacion input {
+    padding: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#cotizacion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color:#333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cotizacion button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para los mensajes */
+#mensaje {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#mensaje.exito {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#mensaje.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

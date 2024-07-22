@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webapp de Ropa y Accesorios de Gym</title>
+    <script defer type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Shark</h1>
+        <div id="contador-titu">Productos en el carrito: <span id="contador-carrito">0</span></div>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+            <div id="lista-productos" class="productos-container"></div>
+        </section>
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total-gastado"></p>
+            <button id="comprar">Comprar</button>
+            
+        </section>
+        <section id="cotizacion">
+            <h2>Formulario de Cotización</h2>
+            <form id="formulario-cotizacion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <button type="submit">Enviar Cotización</button>
+            </form>
+            <div id="mensaje"></div>
+        </section>
+    </main>
+    
+    <!-- Imágenes de productos (ocultas) -->
+    <div id="imagenes-productos" style="display:none;">
+        <img id="img-camiseta" src="./img/camiseta.webp" alt="Camiseta">
+        <img id="img-zapatillas" src="./img/zapatillas.webp" alt="Zapatillas">
+        <img id="img-medias" src="./img/medias.webp" alt="Medias">
+        <img id="img-campera" src="./img/campera.webp" alt="Campera">
+    </div>
+</body>
+
+<footer>
+    <p>&copy; 2024 Gym Shark. Todos los derechos reservados.</p>
+</footer>
+</html>
